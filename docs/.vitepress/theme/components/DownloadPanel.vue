@@ -27,9 +27,9 @@ async function copySha() {
     </div>
 
     <div class="acts">
-      <a class="btn primary" :href="proxied">加速下载（推荐）</a>
-      <a class="btn" :href="f6.download">官方直链</a>
-      <a class="btn" :href="f6.releases" target="_blank" rel="noopener">Releases 页面</a>
+      <a class="btn primary" :href="proxied">加速下载</a>
+      <a class="btn" :href="f6.download">Github直连</a>
+      <a class="btn" :href="f6.releases" target="_blank" rel="noopener">更多版本</a>
     </div>
 
     <div v-if="f6.sha256" class="sha">
@@ -41,7 +41,7 @@ async function copySha() {
     </div>
 
     <p class="note">
-      适用于 Windows 11 x64。首次点击“启动免流”时会下载运行核心（约 21 MB），同样走加速通道。
+      适用于 Windows 11 x64
     </p>
   </div>
 </template>

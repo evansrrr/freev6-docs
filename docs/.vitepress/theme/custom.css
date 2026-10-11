@@ -101,7 +101,11 @@ html {
 }
 
 .VPHero .text {
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
+}
+
+.dark .VPHero .text {
+  color: #ffffff;
 }
 
 .VPHero .tagline {
