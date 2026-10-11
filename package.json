@@ -5,8 +5,9 @@
   "type": "module",
   "description": "FreeV6 官方文档网站（VitePress）",
   "scripts": {
+    "sync": "node scripts/sync-about.mjs",
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "node scripts/sync-about.mjs && vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
