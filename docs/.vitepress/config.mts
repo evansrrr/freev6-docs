@@ -45,20 +45,21 @@ const freev6 = await loadLatest()
 export default defineConfig({
   lang: 'zh-CN',
   title: 'FreeV6',
-  description: '教育网通用 IPv6 免流客户端 · 官方文档',
+  description: '教育网通用 IPv6 免流客户端官方文档',
   cleanUrls: true,
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'FreeV6 · 教育网通用 IPv6 免流客户端' }],
-    ['meta', { property: 'og:description', content: 'FreeV6 官方文档：下载安装、使用说明、常见问题与协议条款。' }],
+    ['meta', { property: 'og:title', content: 'FreeV6：教育网通用 IPv6 免流客户端' }],
+    ['meta', { property: 'og:description', content: 'FreeV6 官方文档：下载安装、使用说明、常见问题与协议条款' }],
     ['meta', { name: 'theme-color', content: '#121318' }]
   ],
   themeConfig: {
     logo: '/logo.png',
     nav: [
-      { text: '指南', link: '/guide/introduction', activeMatch: '/guide/' },
+      { text: "首页", link: "/" },
+      { text: '使用指南', link: '/guide/introduction', activeMatch: '/guide/' },
       { text: '下载', link: '/download', activeMatch: '/download' },
       {
         text: '关于',
@@ -75,8 +76,8 @@ export default defineConfig({
         {
           text: '指南',
           items: [
-            { text: 'FreeV6 是什么', link: '/guide/introduction' },
-            { text: '下载与安装', link: '/guide/install' },
+            { text: 'FreeV6 介绍', link: '/guide/introduction' },
+            { text: '安装', link: '/guide/install' },
             { text: '使用说明', link: '/guide/usage' },
             { text: '常见问题', link: '/guide/faq' }
           ]
@@ -86,8 +87,8 @@ export default defineConfig({
         {
           text: '获取 FreeV6',
           items: [
-            { text: '下载（加速）', link: '/download' },
-            { text: '下载与安装', link: '/guide/install' },
+            { text: '下载', link: '/download' },
+            { text: '安装', link: '/guide/install' },
             { text: '常见问题', link: '/guide/faq' }
           ]
         }
@@ -132,8 +133,8 @@ export default defineConfig({
     },
     socialLinks: [{ icon: 'github', link: `https://github.com/${REPO}` }],
     footer: {
-      message: 'FreeV6 · 教育网通用 IPv6 免流客户端',
-      copyright: '本软件采用 MIT 许可 · 使用前请阅读用户协议与隐私政策'
+      message: 'FreeV6 by <a href="https://ich.cc.cd">Raziore</a>',
+      copyright: 'Released under MIT & CC BY-NC-SA 4.0'
     },
     lastUpdatedText: '最后更新于',
     docFooter: { prev: '上一页', next: '下一页' },
