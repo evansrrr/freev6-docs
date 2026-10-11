@@ -1,0 +1,19 @@
+{
+  "name": "freev6-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FreeV6 官方文档网站（VitePress）",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.43"
+  }
+}
