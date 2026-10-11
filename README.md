@@ -24,8 +24,7 @@ docs/
 │   ├── config.mts        # 导航、侧边栏、搜索、版本信息（含 gh-proxy 抓取）
 │   └── theme/            # 主题扩展
 │       ├── custom.css    # 设计令牌（对齐客户端 web/styles.css）
-│       ├── Layout.vue    # 首页插槽（状态面板、下载条）
-│       └── components/   # TunnelPanel / DownloadPanel / DownloadStrip
+│       └── components/   # DownloadPanel（下载卡片）与版本数据 composable
 ├── guide/                # 指南：简介、下载安装、使用说明、常见问题
 ├── about/                # 用户协议、隐私政策、更新日志（来自主仓库）
 ├── download.md           # 下载页（加速链接 + SHA256）

@@ -127,21 +127,6 @@ html {
   font-weight: 700;
 }
 
-/* ── 首页 hero：放置的是状态面板，而非默认的圆形图片 ────── */
-
-/* 取消固定画布尺寸与圆形图片的偏移 */
-.VPHero .image-container {
-  height: auto;
-  transform: none;
-}
-
-/* 默认圆形图片在窄屏用负边距上浮，这里会造成面板与按钮重叠 */
-@media (max-width: 959px) {
-  .VPHero .image {
-    margin: 24px 0 0;
-  }
-}
-
 /* ── 导航与页脚 ─────────────────────────────────────────── */
 
 .VPNavBar {
@@ -157,24 +142,17 @@ html {
   font-size: 13px;
 }
 
-/* ── 特性区：顶部色条的平铺条目，不用卡片阴影 ──────────── */
+/* ── 特性区：卡片样式（圆角与分隔线对齐产品令牌） ──────── */
 
 .VPHomeFeatures .VPFeature {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  background: var(--vp-c-bg-elv);
 }
 
 .VPHomeFeatures .VPFeature .box {
   height: 100%;
-  padding: 18px 0 0;
-  border: 0;
-  border-top: 2px solid var(--vp-c-brand-1);
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  padding: 22px;
 }
 
 .VPHomeFeatures .VPFeature .title {
